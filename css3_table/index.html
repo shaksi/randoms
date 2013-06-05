@@ -1,0 +1,355 @@
+
+    <style media="screen" type="text/css">
+    #fdw-pricing-table {
+    		margin:0 auto;
+    		text-align: center;
+    		width: 928px; /* total computed width */
+    		zoom: 1;
+    	}
+
+    	#fdw-pricing-table:before, #fdw-pricing-table:after {
+    	  content: "";
+    	  display: table
+    	}
+
+    	#fdw-pricing-table:after {
+    	  clear: both
+    	}
+
+    	/* --------------- */	
+
+    	#fdw-pricing-table .plan {
+    		font: 13px;     
+    		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    		background: #fff;      
+    		border: 1px solid #ddd;
+    		color: #333;
+    		padding: 20px;
+    		width: 180px;
+    		float: left;
+    		_display: inline; /* IE6 double margin fix */
+    		position: relative;
+    		margin: 0 5px 10px;
+    		-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+    		-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+    		box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);		
+    	}
+    	
+    	
+
+    	#fdw-pricing-table .plan:after {
+    	  z-index: -1; 
+    	  position: absolute; 
+    	  content: "";
+    	  bottom: 10px;
+    	  right: 4px;
+    	  width: 80%; 
+    	  top: 80%; 
+    	  -webkit-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);   
+    	  -moz-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+    	  box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+    	  -webkit-transform: rotate(3deg);    
+    	  -moz-transform: rotate(3deg);   
+    	  -o-transform: rotate(3deg);
+    	  -ms-transform: rotate(3deg);
+    	  transform: rotate(3deg);	
+    	}	
+
+    	#fdw-pricing-table .popular-plan {
+    		top: -20px;
+    		padding: 40px 20px;   
+    	}
+
+    	/* --------------- */	
+
+    	#fdw-pricing-table .header {
+    		position: relative;
+    		font-size: 20px;
+    		font-weight: normal;
+    		text-transform: uppercase;
+    		padding: 20px;
+    		margin: -20px -20px 20px -20px;
+    		border-bottom: 8px solid;
+    		background-color: #eee;
+    		background-image: -moz-linear-gradient(#fff,#eee);
+    		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+    		background-image: -webkit-linear-gradient(#fff, #eee);
+    		background-image: -o-linear-gradient(#fff, #eee);
+    		background-image: -ms-linear-gradient(#fff, #eee);
+    		background-image: linear-gradient(#fff, #eee);
+    	}
+
+    	#fdw-pricing-table .header:after {
+    		position: absolute;
+    		bottom: -8px; left: 0;
+    		height: 3px; width: 100%;
+    		content: '';
+    	}
+
+      #fdw-pricing-table .txt {
+      top: 13px;
+      margin: -23px 0px 0px 0px;
+      position: relative;
+      }
+
+    	#fdw-pricing-table .image {
+    		position: relative;
+    		margin: -20px -20px 20px -20px;
+    		border-bottom: 8px solid;
+    		background-color: #eee;
+    		background-image: -moz-linear-gradient(#fff,#eee);
+    		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+    		background-image: -webkit-linear-gradient(#fff, #eee);
+    		background-image: -o-linear-gradient(#fff, #eee);
+    		background-image: -ms-linear-gradient(#fff, #eee);
+    		background-image: linear-gradient(#fff, #eee);
+    	}
+    	
+    	
+    	#fdw-pricing-table .links {
+    		position: relative;
+    		margin: -10px -20px -2px -20px;
+   
+    	}
+
+
+    	/* --------------- */
+
+    	#fdw-pricing-table .big_picture, #fdw-pricing-table .deep_dive {
+    		position: relative;
+    		padding: 10px 15px;
+    		color: #fff;
+    		font: bold 12px Arial, Helvetica;
+    		text-transform: uppercase;
+    		text-decoration: none;
+    		display: inline-block;       
+    		background-color: rgb(210,0,60);
+    		-moz-border-radius: 3px;
+    		-webkit-border-radius: 3px;
+    		border-radius: 3px;     
+    		text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    		opacity: .9;       
+    	}
+
+    	#fdw-pricing-table .big_picture:hover, #fdw-pricing-table .deep_dive:hover {
+    		opacity: 1;       
+    	}
+
+    	#fdw-pricing-table .big_picture:active {
+    		-moz-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+    		-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+    		box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;       
+    	}			
+
+
+    	/* end --------------- */
+
+
+
+    
+    	/* General Demo Style */
+    	body{
+    		background:url(images/bgnoise_lg.png);
+    		font-weight: 400;
+    		font-size: 15px;
+    		color: #3a2127;
+    		overflow-y: scroll;
+    	}
+    	a{
+    		color: #333;
+    		text-decoration: none;
+    	}
+    	.container{
+    		width: 100%;
+    		height: 100%;
+    		position: relative;
+    	}
+    	.clr{
+    		clear: both;
+    	}
+
+    </style>
+
+<div id="fdw-pricing-table">
+    <div class="plan">
+        <div class="header">Advertising</div> 
+        <div class="image">
+          <img src="http://placehold.it/220x150&text=IMAGE+GOES+HERE">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>
+    </div>
+    
+    <div class="plan">
+        <div class="header">Comms / RBMH</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150&text=IMAGE+GOES+HERE">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>      
+    </div>
+
+    <div class="plan">
+        <div class="header">
+          <div class="txt">Consumer Initiative</div>
+        </div>
+        <div class="image">
+          <img src="http://placehold.it/220x150&text=IMAGE+GOES+HERE">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>      
+    </div>
+
+    <div class="plan">
+        <div class="header">Culture</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150&text=IMAGE+GOES+HERE">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>      
+    </div>
+
+    <div class="plan clr">
+        <div class="header">Field Marketing</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>        
+    </div>
+
+    <div class="plan">
+        <div class="header">Initiatives</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>    
+    </div>
+
+    <div class="plan">
+        <div class="header">Insights</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>
+    </div>
+
+    <div class="plan">
+        <div class="header">Merchandising</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>      
+    </div>
+
+    <div class="plan">
+        <div class="header">Motorsports</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150&text=IMAGE+GOES+HERE">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>    
+    </div>
+
+    <div class="plan">
+        <div class="header">Off Premise</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150&text=IMAGE+GOES+HERE">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>      
+    </div>
+    
+    <div class="plan">
+        <div class="header">On Premise</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150&text=IMAGE+GOES+HERE">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>      
+    </div>
+    
+    <div class="plan">
+        <div class="header">Pricing</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150&text=IMAGE+GOES+HERE">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>      
+    </div>
+
+    <div class=" plan">
+        <div class="header">SBM</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>       
+    </div>
+
+    <div class="plan">
+        <div class="header">Sports</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>      
+    </div>
+
+    <div class="plan">
+        <div class="header">Wings</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>     
+    </div> 	
+    
+    <div class="plan">
+        <div class="header">Wings For Life</div>
+        <div class="image">
+          <img src="http://placehold.it/220x150">
+        </div>
+        <div class="links">
+          <a class="big_picture" href="#">Big Picture</a>  
+          <a class="deep_dive" href="#">Deep Dive</a>  
+        </div>      
+    </div>
+
+</div>
+
+
+
